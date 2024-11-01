@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="module"  src="script.js"></script>
+
+</head>
+<body>
+   <form>
+    <label for="titulo">Título:</label>
+                <input type="text" id="titulo" value=""  minlength="0" maxlength="10" placeholder="Máx. 10 caracteres"><br> <!-- Min 0 caracteres y máx 10 -->
+    <label for="x">Eje X:</label>
+                <input type="range" id="x" value="0" min="-20" max="20" step="1"> <!-- Rango de los pixeles que se moverá -->
+    <label for="y">Eje Y:</label>
+                <input type="range" id="y" value="0" min="-20" max="20" step="1"><br> <!-- Rango de los pixeles que se moverá -->
+    <label for="color">Blanco</label>
+                <input type="radio" id="colorBl" name="color" value="blanco">
+    <label for="color">Negro</label>
+                <input type="radio" id="colorNe" name="color" value="negro" checked> <!-- Marcado camiseta negro por defecto para que siempre exista alguno marcado -->
+    </form>
+    <div id="izq">
+        <h3>Arrastra las imágenes a la camiseta.
+            <br><p>🢃</p>
+        </h3>
+           
+        
+        <br>
+        <img src="corazon.png" class="img" id="Corazón">
+        <img src="calavera.png" class="img" id="Esqueleto">
+        <img src="pc.png" class="img" id="Ordenador">
+        <img src="palomitas.png" class="img" id="Palomitas">
+    </div>
+    <div id="contenedor">
+        <img src="black.png" class="camicolor" id="camiseta">
+    </div>
+</body>
+</html>
